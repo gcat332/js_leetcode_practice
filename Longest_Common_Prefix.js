@@ -13,6 +13,7 @@
 strs = ["a","b"]
 
 var longestCommonPrefix = function(strs) {
+    //Sort Alphabet, if there are prefix, they will have same alphabet between first and last word.
     strs.sort();
     for (let i=0;i<strs[0].length;i++){
         if (strs[0][i]!=strs[strs.length-1][i]){
